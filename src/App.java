@@ -4,7 +4,7 @@
 * @author Qraven
 * @version 1.0
 * Created on 12.09.2019 (dd/mm/rr)
-* 
+*
  */
 import java.util.Scanner;
 
@@ -31,7 +31,17 @@ public class App {
         }
 
         //Printing out the result
+        String reverseString = new String(reverse); //I need to make a String of this array because the equals method work only for Strings
         System.out.println(reverse);
+
+        //Checking if the given word is a palindrome
+        if(input.equals(reverseString))
+        {
+            System.out.println("This word is a palindrome");
+        }else
+        {
+            System.out.println("This word is not a palindrome");
+        }
     }
 
 }
